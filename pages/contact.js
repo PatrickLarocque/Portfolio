@@ -4,11 +4,11 @@ import Section from '../components/section'
 import { GridItem } from '../components/grid-item'
 
 
-const ContactMe = () => (
+const Contact = () => (
   <Layout title="Contact Me">
 
   </Layout>
 )
 
-export default ContactMe
+export default Contact
 export { getServerSideProps } from '../components/chakra'
