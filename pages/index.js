@@ -9,7 +9,8 @@ import {
   List,
   ListItem,
   useColorModeValue,
-  chakra
+  chakra,
+  Stack
 } from '@chakra-ui/react'
 import { ChevronRightIcon, EmailIcon } from '@chakra-ui/icons'
 import Paragraph from '../components/paragraph'
@@ -85,17 +86,28 @@ const Home = () => (
             Linkedin
           </Link>
         </Paragraph>
-        <Box align="center" my={4}>
-          <Button
-            as={NextLink}
-            href="/works"
-            scroll={false}
-            rightIcon={<ChevronRightIcon />}
-            colorScheme="teal"
+        <Stack direction={{ base: 'column', md: 'row' }} spacing={4} align="center" justify="center" my={4}>
+          <Button 
+          as={NextLink}
+          href="/works"
+          scroll={false}
+          rightIcon={<ChevronRightIcon />}
+          colorScheme="teal"
+          width="150px"
           >
             My portfolio
           </Button>
-        </Box>
+          <Button
+          as={NextLink}
+          href="/works"
+          scroll={false}
+          rightIcon={<ChevronRightIcon />}
+          colorScheme="teal"
+          width="150px"
+          >
+            Download CV
+          </Button>
+        </Stack>
       </Section>
 
       <Section delay={0.2}>

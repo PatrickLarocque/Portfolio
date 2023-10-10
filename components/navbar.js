@@ -30,6 +30,7 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
       p={2}
       bg={active ? 'grassTeal' : undefined}
       color={active ? '#202023' : inactiveColor}
+      borderRadius='md'
       target={target}
       {...props}
     >
