@@ -81,9 +81,9 @@ const Home = () => (
           After some time in academic philosophy and the insurance world, I decided
           to turn towards software development during the pandemic. My journey has
           been amazing so far. I am passionate about developer tooling, compilers and
-          distributed systems. Come say hello on {' '}
+          distributed systems. Connect with me on  {' '}
           <Link as={NextLink} href="https://www.linkedin.com/in/patrick-larocque/" passHref scroll={false}>
-            Linkedin
+            Linkedin.
           </Link>
         </Paragraph>
         <Stack direction={{ base: 'column', md: 'row' }} spacing={4} align="center" justify="center" my={4}>
@@ -97,16 +97,15 @@ const Home = () => (
           >
             My portfolio
           </Button>
-          <Button
-          as={NextLink}
-          href="/works"
-          scroll={false}
-          rightIcon={<ChevronRightIcon />}
-          colorScheme="teal"
-          width="150px"
-          >
+          <Link href='/BilingualCV.pdf' isExternal download="PatrickLarocqueCV.pdf">
+            <Button
+            rightIcon={<ChevronRightIcon />}
+            colorScheme="teal"
+            width="150px"
+            >
             Download CV
-          </Button>
+            </Button>
+          </Link>
         </Stack>
       </Section>
 
@@ -115,18 +114,14 @@ const Home = () => (
           Bio
         </Heading>
         <BioSection>
-          <BioYear>1991</BioYear>
-          Born in Montreal, Canada
-        </BioSection>
-        <BioSection>
           <BioYear>2017</BioYear>
-            Completed a BA. Hons in Philosophy with a thesis focusing on
-            Phenomenology at Bishop's University.
+            Completed BA in Philosophy from Bishop&apos;s University with an honors thesis focusing
+            on Phenomenology.
         </BioSection>
         <BioSection>
           <BioYear>2018</BioYear>
-          Started a Master's Program in Philosophy at Concordia University
-          and spent some time working in property and casualty insurance.
+          Started Master&apos;s coursework in Philosophy at McGill University. Spent some time working
+          in property and casualty insurance.
         </BioSection>
         <BioSection>
           <BioYear>2021</BioYear>
@@ -135,7 +130,7 @@ const Home = () => (
         </BioSection>
         <BioSection>
           <BioYear>2023</BioYear>
-          Graduated and started working as a developer for Intact Insurance.
+          Graduated! Started working as an SDE for Intact.
         </BioSection>
       </Section>
 
@@ -144,11 +139,8 @@ const Home = () => (
           I ♥
         </Heading>
         <Paragraph>
-          Philosophy, Music,{' '}
-          <Link href="" target="_blank">
-            Drawing
-          </Link>
-          , Playing Drums, Synths, Computer Sience
+          Philosophy, Music, Playing Drums, Synthesizers, Developer Tools, Compilers,
+          My Dog Copper 🐕
         </Paragraph>
       </Section>
 
