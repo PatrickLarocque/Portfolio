@@ -73,24 +73,23 @@ const Desk = () => {
       camera.position.copy(initialCameraPosition)
       camera.lookAt(target)
 
-      const ambientLight = new THREE.AmbientLight(0xcccccc, 1.2, 1000)
-      ambientLight.castShadow= true;
+      const ambientLight = new THREE.AmbientLight(0xcccccc, 1.3)
       scene.add(ambientLight)
 
 
       const light = new THREE.DirectionalLight(0xffffff, 1.8);
       light.position.set(20, 19, 19);
       light.castShadow = true;
-      light.shadow.mapSize.width = 1024;  // Default is 512, increase for higher resolution shadow
-      light.shadow.mapSize.height = 1024; // Default is 512
-      light.shadow.camera.near = 0.5;    // Default is 0.5
+      light.shadow.mapSize.width = 1024;
+      light.shadow.mapSize.height = 1024;
+      light.shadow.camera.near = 0.5;
       light.shadow.camera.far = 500;
       scene.add(light);
 
 
       const controls = new OrbitControls(camera, renderer.domElement)
       controls.autoRotate = true
-      controls.autoRotateSpeed = .5; // default is 2.0
+      controls.autoRotateSpeed = .65;
       controls.target = target
 
       loadGLTFModel(scene, deskGLB, {
